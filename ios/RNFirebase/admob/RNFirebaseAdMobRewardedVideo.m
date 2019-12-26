@@ -31,7 +31,7 @@
 
 - (void)show {
     if (_videoAd.isReady) {
-        [_videoAd presentFromRootViewController:[UIApplication sharedApplication].delegate.window.rootViewController];
+        [_videoAd presentFromRootViewController:[RNFirebaseUtil topViewController]];
     }
 }
 
