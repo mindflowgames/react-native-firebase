@@ -19,6 +19,8 @@
 + (NSString *)getAppDisplayName:(NSString *)appName;
 + (void)sendJSEvent:(RCTEventEmitter *)emitter name:(NSString *)name body:(id)body;
 + (void)sendJSEventWithAppName:(RCTEventEmitter *)emitter app:(FIRApp *)app name:(NSString *)name body:(id)body;
++ (UIViewController*)topViewController;
++ (UIViewController*)topViewControllerWithRootViewController:(UIViewController*)viewController;
 
 @end
 
